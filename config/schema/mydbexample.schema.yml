@@ -1,0 +1,10 @@
+mydbexample.settings:
+  type: config_object
+  label: MyDBExample Content Type Settings
+  mapping:
+    allowed_types:
+      type: sequence
+      label: Content types the MyDBExample can display on
+      sequence:
+        type: string
+        label: Content type

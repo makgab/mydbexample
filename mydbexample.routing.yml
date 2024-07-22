@@ -1,3 +1,4 @@
+# Pages routes
 mydbexample.category:
   path: /mydbexample/category
   defaults:
@@ -62,14 +63,16 @@ mydbexample.productdelete:
   requirements:
     _permission: view mydbexample
 
-#mydbexample.admin_settings:
-#  path: /admin/config/content/mydbexample
-#  defaults:
-#    _form: \Drupal\mydbexample\Form\SettingsForm
-#    _title: MyDBExample List Settings
-#  requirements:
-#    _permission: administer mydbexample
+# Admin setting
+mydbexample.admin_settings:
+  path: /admin/config/content/mydbexample
+  defaults:
+    _form: \Drupal\mydbexample\Form\MyDBExampleSettingsForm
+    _title: MyDBExample Settings
+  requirements:
+    _permission: administer mydbexample
 
+# Report routes
 mydbexample.reportcategory:
   path: /admin/reports/mydbexample_category
   defaults:

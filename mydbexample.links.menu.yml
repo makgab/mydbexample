@@ -1,3 +1,4 @@
+# Page menu
 mydbexample.categorypage:
   title: Category List
   description: "Category in MyDBExample"
@@ -26,13 +27,15 @@ mydbexample.productaddpage:
   menu_name: main
   weight: -12
 
-#mydbexample.admin_settings_link:
-#  title: MyDBExample Settings
-#  description: Control display of MyDBExample Form
-#  route_name: mydbexample.admin_settings
-#  parent: system.admin_config_content
-#  weight: 10
+# Admin menu
+mydbexample.admin_settings_link:
+  title: MyDBExample Settings
+  description: Control display of MyDBExample Form
+  route_name: mydbexample.admin_settings
+  parent: system.admin_config_content
+  weight: 10
 
+# Report menu
 mydbexample.report_link_category:
   title: "MyDBExample Report: Category"
   description: View listing of MyDBExample Category
