@@ -1,0 +1,48 @@
+mydbexample.categorypage:
+  title: Category List
+  description: "Category in MyDBExample"
+  route_name: mydbexample.category
+  menu_name: main
+  weight: -15
+
+mydbexample.categoryaddpage:
+  title: Category Add
+  description: "Add Category in MyDBExample"
+  route_name: mydbexample.categoryadd
+  menu_name: main
+  weight: -14
+
+mydbexample.productpage:
+  title: Product List
+  description: "Product in MyDBExample"
+  route_name: mydbexample.product
+  menu_name: main
+  weight: -13
+
+mydbexample.productaddpage:
+  title: Product Add
+  description: "Add Product in MyDBExample"
+  route_name: mydbexample.productadd
+  menu_name: main
+  weight: -12
+
+#mydbexample.admin_settings_link:
+#  title: MyDBExample Settings
+#  description: Control display of MyDBExample Form
+#  route_name: mydbexample.admin_settings
+#  parent: system.admin_config_content
+#  weight: 10
+
+mydbexample.report_link_category:
+  title: "MyDBExample Report: Category"
+  description: View listing of MyDBExample Category
+  route_name: mydbexample.reportcategory
+  parent: system.admin_reports #/admin/reports
+  weight: -5
+
+mydbexample.report_link_product:
+  title: "MyDBExample Report: Product"
+  description: View listing of MyDBExample Product
+  route_name: mydbexample.reportproduct
+  parent: system.admin_reports #/admin/reports
+  weight: -6

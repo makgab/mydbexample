@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the module.
+ */
+
+function mydbexample_schema() {
+  // Create a database table:
+  $schema['mydbexample_product'] = [
+    'description' => 'Stores product information.',
+    'fields' => [
+      'pid' => [
+        'description' => 'The primary identifier for the record.',
+        'type' => 'serial',
+        'size' => 'small', // tiny / small / medium / normal / big
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'description' => 'Name of product.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'price' => [
+        'description' => 'Price of product.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'catid' => [
+        'description' => 'Identifier of category.',
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+    ],
+    'primary key' => ['pid'],
+    'indexes' => [
+      'name' => ['name'],
+      'proce' => ['price'],
+    ],
+  ];
+
+  // Create a database table:
+  $schema['mydbexample_category'] = [
+    'description' => 'Category of product.',
+    'fields' => [
+      'catid' => [
+        'description' => 'Category identifier field.',
+        'type' => 'serial',
+        'size' => 'small', // tiny / small / medium / normal / big
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'catname' => [
+        'description' => 'Name of category.',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+    ],
+    'primary key' => ['catid'],
+  ];
+
+  return $schema;
+}

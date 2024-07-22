@@ -1,0 +1,87 @@
+mydbexample.category:
+  path: /mydbexample/category
+  defaults:
+    _controller: \Drupal\mydbexample\Controller\CategoryController::display
+    _title: Category List
+  requirements:
+    _permission: view mydbexample
+
+mydbexample.categoryadd:
+  path: /mydbexample/category/add
+  defaults:
+    _form: \Drupal\mydbexample\Form\CategoryForm
+    _title: Category Add
+  requirements:
+    _permission: view mydbexample
+
+mydbexample.categoryedit:
+  path: /mydbexample/category/edit/{id}
+  defaults:
+    _form: \Drupal\mydbexample\Form\CategoryEditForm
+    _title: Category Edit
+  requirements:
+    _permission: view mydbexample
+
+mydbexample.categorydelete:
+  path: /mydbexample/category/delete/{id}
+  defaults:
+    _form: \Drupal\mydbexample\Form\CategoryDeleteForm
+    _title: Category Delete
+  requirements:
+    _permission: view mydbexample
+
+mydbexample.product:
+  path: /mydbexample/product
+  defaults:
+    _controller: \Drupal\mydbexample\Controller\ProductController::display
+    _title: Product List
+  requirements:
+    _permission: view mydbexample
+
+mydbexample.productadd:
+  path: /mydbexample/product/add
+  defaults:
+    _form: \Drupal\mydbexample\Form\ProductForm
+    _title: Product Add
+  requirements:
+    _permission: view mydbexample
+
+mydbexample.productedit:
+  path: /mydbexample/product/edit/{id}
+  defaults:
+    _form: \Drupal\mydbexample\Form\ProductEditForm
+    _title: Product Edit
+  requirements:
+    _permission: view mydbexample
+
+mydbexample.productdelete:
+  path: /mydbexample/product/delete/{id}
+  defaults:
+    _form: \Drupal\mydbexample\Form\ProductDeleteForm
+    _title: Product Delete
+  requirements:
+    _permission: view mydbexample
+
+#mydbexample.admin_settings:
+#  path: /admin/config/content/mydbexample
+#  defaults:
+#    _form: \Drupal\mydbexample\Form\SettingsForm
+#    _title: MyDBExample List Settings
+#  requirements:
+#    _permission: administer mydbexample
+
+mydbexample.reportcategory:
+  path: /admin/reports/mydbexample_category
+  defaults:
+    _controller: \Drupal\mydbexample\Controller\ReportCategoryController::report
+    _title: List of MyDBExample Category
+  requirements:
+    _permission: access mydbexample report
+
+mydbexample.reportproduct:
+  path: /admin/reports/mydbexample_product
+  defaults:
+    _controller: \Drupal\mydbexample\Controller\ReportProductController::report
+    _title: List of MyDBExample Product
+  requirements:
+    _permission: access mydbexample report

@@ -1,0 +1,10 @@
+view mydbexample:
+  title: 'View MyDBExample Form'
+  description: 'View and Submit the MyDBExample form.'
+access mydbexample report:
+  title: 'Access List of MyDBExample'
+  description: 'View the report listing of MyDBExample.'
+administer mydbexample:
+  title: 'Administer MyDBExample'
+  description: 'Access the administrative settings page.'
+  restrict access: true
